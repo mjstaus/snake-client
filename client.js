@@ -22,10 +22,8 @@ const connect = function() {
   conn.on('data', (data) => {
     console.log(data);
   });
-
   return conn;
 };
 
-console.log("Connecting ...");
 
-module.exports = connect();
+module.exports = {connect};
