@@ -1,16 +1,19 @@
 const IP = 'localhost';
 const PORT = 50541;
 const NAME = 'Name: MJS';
-const MOVEMENT_KEYS = {
-  UP:'w',
-  DOWN: 's',
-  LEFT: 'a',
-  RIGHT: 'd'
-};
-const MESSAGES = {
-  A: ['j', 'Say: MMMMMM SNACKSSSSSSSSSS'],
-  B: ['k', 'Say: just keep slitherin'],
-  C: ['l', 'Say: beep beep']
+
+const USER_INPUTS = {
+  movementKeys: {
+    w: 'Move: up',
+    s: 'Move: down',
+    a: 'Move: left',
+    d: 'Move: right'
+  },
+  messages: {
+    j: 'Say: MMMMMM SNACKSSSSSSSSSS',
+    k: 'Say: just keep slitherin',
+    l: 'Say: beep beep'
+  }
 };
 
-module.exports = {IP, PORT, NAME, MOVEMENT_KEYS, MESSAGES};
+module.exports = {IP, PORT, NAME, USER_INPUTS};
